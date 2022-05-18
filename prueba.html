@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+  <h1>Fundamento de JS</h1>
+</head>
+
+<body>
+  <h2>comienzos en JS</h2>
+  <script>
+
+    // //var hola = "Hola mundo"; var:mala practica, porque genera variable globales
+    /*  let hello = "Hello world";
+     console.log(hello);
+ 
+     let musica2 = "Rock";
+     console.log("Variable Música antes del Bloque", musica2);
+     {
+       let musica2 = "POP";
+       console.log("Variable Música dentro del bloque", musica2);
+     }
+     console.log("Variable Música después del Bloque", musica2);
+     //***********************************************/
+    /*  const PI = 3.1416;
+     console.log(PI);
+ 
+     let objeto = {
+       nombre: "",
+       edad: 22
+     }
+     console.log(objeto);
+ 
+     let colores = ["negro", "blanco", "azul"];
+     console.log(colores); */
+
+    //************************ 
+    
+   //////////////////////////////////Programa una función que cuente el número de caracteres de una cadena de texto/////////////////////////////////////////////////////////
+    let nombre = "Luis";
+    let apellido = "Coronado";
+    let saludo = new String("Hola mundo");
+    console.log(nombre, saludo, nombre.length);
+    console.log(nombre[0]);
+ 
+    //////////////////////////////////////Programa una función que te devuelva el texto recortado según el número de caracteres indicados////////////////////////////////////////////////////
+
+const texto= "aprender es poner en practica";
+console.log(texto.slice(0,8)); 
+
+/////////////////////////////////////Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter/////////////////////////////////////////////////////////
+
+  let textoOrg = "El calentamiento global es irreversible";
+  let arrayDeTexto = textoOrg.split(" ");
+  function separarTexto() {
+    console.log(arrayDeTexto);
+  }
+  separarTexto();    
+
+///////////////////////////////////Programa una función que repita un texto X veces///////////////////////////////////////////////////////
+
+let repetir="lamamádelamamádelamamá"
+function repite() {
+  console.log(repetir.repeat(3), repetir.length);
+}
+repite();
+  /*
+        let nombre = "Luis";
+        let Apellido = "C";
+    
+        //concatenacion
+    
+        let Saludo = "HOLA MI NOMBRE ES " + nombre + " " + Apellido + "."
+        console.log(Saludo);
+        //template string//
+        let saludo2 = `HOLA MI NOMBRE ES ${nombre} ${Apellido}.`
+        console.log(saludo2);
+    
+        let ul = ``
+    */
+    //##########################################/
+    //Numeros
+
+    /* let a = 2;
+    let b = new Number(3);
+    let c = 3.29;
+    let d = "5.6";
+
+    console.log(a, b);
+    console.log(c.toFixed(1));
+    console.log(c.toFixed(5));
+    console.log(parseInt(c));
+    console.log(parseFloat(c));
+    console.log(typeof c, typeof d);
+    console.log(a + b);
+    console.log(c + parseInt(d));*/
+
+    //BOOLEANOS
+
+    /*  let verdadero = true;
+      let falso = false;
+      let v = Boolean(true);
+      let f = Boolean(false);
+  
+      console.log(verdadero, falso, v, f);
+      console.log(typeof verdadero, typeof falso);
+      console.log(Boolean(0));
+      console.log(Boolean(-7));
+  */
+    //UNDEFINED OR NULL//
+/*     let indefinida;
+    console.log(indefinida);
+
+    let nulo = null;
+    console.log(null); */
+
+    //Not a number NaN
+/* 
+    let noEsUnNumero = 9 * 3.7;
+    console.log(noEsUnNumero);
+ */
+    ///_________________________________________________________________________________\\
+
+    /*setInterval(() => {
+      const time = document.querySelector("#demo");
+      let date = new Date();
+      let horas = date.getHours();
+      let minutos = date.getMinutes();
+      let segundos = date.getSeconds();
+      let am_pm = "AM";
+      if (horas > 12) {
+        am_pm = "PM";
+        horas = horas - 12;
+      }
+      if (horas < 10) {
+        horas = "0" + horas;
+      }
+      if (minutos < 10) {
+        minutos = "0" + minutos;
+      }
+      if (segundos < 10) {
+        segundos = "0" + segundos;
+      }
+      time.textContent = horas + ":" + minutos + ":" + segundos + " " + am_pm;
+
+    })
+*/
+    /*
+       set(() => {
+         const time = document.querySelector("#demo");
+         let date = new Date();
+         let horas = date.getHours();
+         let minutos = date.getMinutes();
+         let segundos = date.getSeconds();
+         let am_pm = "AM";
+         if (horas > 12) {
+           am_pm = "PM";
+           horas = horas - 12;
+         }
+         if (horas < 10) {
+           horas = "0" + horas;
+         }
+         if (minutos < 10) {
+           minutos = "0" + minutos;
+         }
+         if (segundos < 10) {
+           segundos = "0" + segundos;
+         }
+         time.textContent = horas + ":" + minutos + ":" + segundos + " " + am_pm;
+   
+   */
+/*     const objeto1 = {
+      nombre: "hola"
+    }
+    const objeto2 = {
+      name: "hola"
+    }
+    console.log(objeto1 === objeto2);
+    console.log(objeto1 === objeto1);*/
+  </script>
+
+</body>
+
+</html>
